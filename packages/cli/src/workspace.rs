@@ -63,7 +63,7 @@ impl Workspace {
             tokio::time::sleep(Duration::from_millis(1000)).await;
             eprintln!("{GLOW_STYLE}warning{GLOW_STYLE:#}: Waiting for cargo-metadata...");
             tokio::time::sleep(Duration::from_millis(2000)).await;
-            for x in 1..=100 {
+            for x in 1..=10000 {
                 tokio::time::sleep(Duration::from_millis(2000)).await;
                 eprintln!("{GLOW_STYLE}warning{GLOW_STYLE:#}: (Try {x}) Taking a while...");
 
